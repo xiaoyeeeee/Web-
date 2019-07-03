@@ -2,10 +2,33 @@
 ====
 HTML基础
 ---
-#头标签 <br>
-    `<meta charset="UTF-8">`编码一般采用UTF-8,字比较少少，只用中文和少数外语和符号，但是尺寸小，文件小巧的用gb2312。   
-    `<meta name="Keywords" content="关键词">`向所引器说明该网页的主要内容，便于搜索到。<br>
-    `<meta name="Description" content="描述信息">` <br>
-    `<meta http-equiv="refresh" content="10;http://www.baidu.com">`10秒后跳转到百度，类似于火车票买票支付成功后提示5秒后返回。<br>
-#常用标签及其属性<br>
-##`<p>`标签
+# 一、头标签 <br>
+      <meta charset="UTF-8">`编码一般采用UTF-8,字比较少少，只用中文和少数外语和符号，但是尺寸小，文件小巧的用gb2312。   
+    <meta name="Keywords" content="关键词">`向所引器说明该网页的主要内容，便于搜索到。
+    <meta name="Description" content="描述信息">` 
+    <meta http-equiv="refresh" content="10;http://www.baidu.com">`10秒后跳转到百度，类似于火车票买票支付成功后提示5秒后返回。
+# 二、常用标签及其属性<br>
+## 1.文本标签<br>
+    文本容器。<p>里面只能放文字、图片、表单元素。
+    <u>：下划线标记
+    <s>或<del>：中划线标记（删除线）
+    <i>或<em>：斜体标记
+## 2.`<h>`标签
+    网页标题。
+## 3.超链接
+    在<body>标签中设置：link属性表示默认显示的颜色、alink属性表示鼠标点击但是还没有松开时的颜色、vlink属性表示点击完成之后显示的颜色。
+### （1）外部链接
+    <a href="02页面.html">点击进入另外一个文件</a>
+    href：目标URL
+    title：悬停文本。
+    name：主要用于设置一个锚点的名称。
+    target：告诉浏览器用什么方式来打开目标页面。target属性有以下几个值：
+        _self：在同一个网页中显示
+        _blank：在新的窗口中打开
+        _parent：在父窗口中显示
+        _top：在顶级窗口中显示
+### （2）锚链接
+    在本页面或者其他页面的的不同位置进行跳转。很多网页浏览到底部都有返回顶部的功能。
+    <a href="#top">回到顶部</a> 转到id为top的标签中去    
+### （3）邮件链接
+    <a href="mailto:smallq1314@outlook.com">进入邮箱</a>

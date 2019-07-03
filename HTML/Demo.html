@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- <!-- 一般为UTF-8，当中文网页不含其他语言时追求速度可采用gb2312 -->
+    <!-- 一般为UTF-8，当中文网页不含其他语言时追求速度可采用gb2312 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,18 +12,30 @@
     <!-- <meta http-equiv="refresh" content="10;http://www.baidu.com"> -->
     <title>标题显示在浏览器Tab栏</title>
 </head>
-<body>
-    <!-- 几个转义字符 -->
-    <p>
-            &nbsp;：空格
-            &lt;：小于号
-            &gt;：大于号
-            &amp;：符号&
-            &quot;：双引号
-            &apos;：单引号
-            &copy;：版权©
-            &trade;：商标™
-            &#32423;：文字
-    </p>
+
+<body link="blue" alink="red" vlink="green">
+    <div style="height: 600px;overflow: scroll">
+        <div style="height: 800px">
+            <h1 id="top">顶部 一级标题</h1>
+            <h2>转义字符</h2>
+            <!-- 几个转义字符 -->
+            <p>
+                &nbsp;：空格
+                &lt;：小于号
+                &gt;：大于号
+                &amp;：符号&
+                &quot;：双引号
+                &apos;：单引号
+                &copy;：版权©
+                &trade;：商标™
+                &#32423;：文字
+            </p>
+            <a href="http://www.baidu.com" target="_blank">去百度</a>
+            <a href="mailto:smallq1314@outlook.com">邮箱</a>
+            <!-- target指明在哪打开 -->
+            <a href="#top" title="title属性起到一个提示的作用" target="_self">点击我回到顶部</a>
+        </div>
+    </div>
 </body>
+
 </html>
