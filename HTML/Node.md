@@ -32,3 +32,5 @@ HTML基础
     `<a href="#top">回到顶部</a>` 转到id为top的标签中去    
 ### （3）邮件链接
 `<a href="mailto:smallq1314@outlook.com">进入邮箱</a>`
+## 4.图片
+可以写相对路径也可以写绝对路径。
