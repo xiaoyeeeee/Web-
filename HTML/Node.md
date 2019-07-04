@@ -54,47 +54,61 @@
 ## 5.列表
 
 1.`<ul>`无序列表  
-它的内容只能为`<li>`。  
-`<ul style="list-style-type:square">`  
-`<li>项1</li>`  
-`<li>项2</li>`  
-`<li>项3</li>`  
-`</ul>`  
+它的内容只能为`<li>`。
+
+```html
+<ul style="list-style-type:square">
+  <li>项1</li>
+  <li>项2</li>
+  <li>项3</li>
+</ul>
+```
+
 type 属性可定义每一项前的标注样式。  
 设置 li 的 float 为向左浮动，用于实现导航条的效果。
 
 2.`<ol>`有序列表
-`<ol type="1">`  
- `<li>项a</li>`  
- `<li>项b</li>`  
- `<li>项c</li>`  
-`</ol>`
+
+```html
+<ol type="1">
+  <li>项a</li>
+  <li>项b</li>
+  <li>项c</li>
+</ol>
+```
 
 3.`<dl>`定义列表  
-例如网页底部的导航栏  
-`<dl>`  
-`<dt>关于扇贝</dt>`  
-`<dd>`  
-`<a href="#">关注我们</a>`  
-`<a href="#">加入我们</a>`  
-`<a href="#">关于我们</a>`  
-`</dd>`  
-`</dl>`
+例如网页底部的导航栏
+
+```html
+<dl>
+  <dt>关于扇贝</dt>
+  <dd>
+    <a href="#">关注我们</a>
+    <a href="#">加入我们</a>
+    <a href="#">关于我们</a>
+  </dd>
+</dl>
+```
 
 ## 6.表格
 
-结构  
-`<table>`  
- `<tr>`  
- `<th></<th>`  
- `<td></td>`  
- `</tr>`  
- `</table>`  
+结构
+
+```html
+<table>
+   <tr>
+   <th></<th>
+   <td></td>
+   </tr>
+</table>
+```
+
 `<tbody><thead><tfoot>`标签指明表头等表结构
 
 ## 7.表单标签
 
-表单标签用`<form>`表示，用于与服务器的交互。  
+表单标签用`<form>`表示，用于与服务器的交互。
 属性：
 
 - name：表单的名称，用于 JS 来操作或控制表单时使用；
