@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p {
+            color: brown;
+            background-color: aquamarine;
+        }
+
+        #id {
+            background-color: cyan;
+        }
+
+        .class {
+            background-color: blueviolet;
+        }
+
+        .div1 p {
+            background-color: red;
+        }
+
+        .div1>p {
+            font-size: 80px;
+        }
+
+        p#pid {
+            color: aqua;
+        }
+
+        h1,
+        h2 {
+            background-color: aquamarine;
+        }
+        ul li:first-child{
+			color:red;
+		}
+    </style>
+</head>
+
+<body>
+    <p>标签选择</p>
+    <div class="class">属性选择器1</div>
+    <div class="class">属性选择器2</div>
+    <div id="id">id选择器</div>
+</body>
+<div class="div1">
+    <p id="pid">我是被子代选择的，并且是交集选择的</p>
+    <div>
+        <p>我是被后代选择的</p>
+    </div>
+</div>
+<h1>并集</h1>
+<h2>并集</h2>
+<ul>
+    <li class="first">第一个序选择器</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+
+</html>
