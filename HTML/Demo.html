@@ -1,138 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- 一般为UTF-8，当中文网页不含其他语言时追求速度可采用gb2312 -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="Keywords" content="关键词" />
-    <meta name="Description" content="描述信息" />
-    <!-- 10秒后打开百度首页 -->
-    <!-- <meta http-equiv="refresh" content="10;http://www.baidu.com"> -->
-    <title>标题显示在浏览器Tab栏</title>
-    <style>
-      #menu,
-      #menu li {
-        list-style: none; /* 将默认的列表符号去掉 */
-        padding: 0; /* 将默认的内边距去掉 */
-        margin: 0; /* 将默认的外边距去掉 */
-        float: left; /* 往左浮动 */
-        display: block;
-      }
-    </style>
-  </head>
 
-  <body link="blue" alink="red" vlink="green">
-    <div style="height: 600px;overflow: scroll">
-      <div style="height: 800px">
-        <h1 id="top">顶部 一级标题</h1>
-        <h2>转义字符</h2>
-        <!-- 几个转义字符 -->
-        <p>
-          &nbsp;：空格 &lt;：小于号 &gt;：大于号 &amp;：符号& &quot;：双引号
-          &apos;：单引号 &copy;：版权© &trade;：商标™ &#32423;：文字
-        </p>
-        <a href="http://www.baidu.com" target="_blank">去百度</a>
-        <a href="mailto:smallq1314@outlook.com">邮箱</a>
-        <!-- target指明在哪打开 -->
-        <a href="#top" title="title属性起到一个提示的作用" target="_self"
-          >点击我回到顶部</a
-        >
-        <img src="test.png" width="200px" alt="" />
-        <img
-          width="200"
-          src="http://img.dota2.com.cn/dota2/bf/28/bf28dc6e2798fcfd75569db3959c5c131463731922.png"
-          alt=""
-        />
-      </div>
-      <ul style="list-style-type: circle">
-        <li>项1</li>
-        <li>项2</li>
-        <li>项3</li>
-      </ul>
-      <ul style="list-style-type:square">
-        <li>项1</li>
-        <li>项2</li>
-        <li>项3</li>
-      </ul>
-      <ul id="menu">
-        <li><a href="#">官网首页</a></li>
-        <li><a href="#">下载</a></li>
-        <li><a href="#">联系我们</a></li>
-      </ul>
-      <ol type="1">
-        <li>项a</li>
-        <li>项b</li>
-        <li>项c</li>
-      </ol>
-      <dl>
-        <dt>关于扇贝</dt>
-        <dd>
-          <a href="#">关注我们</a>
-          <a href="#">加入我们</a>
-          <a href="#">关于我们</a>
-        </dd>
-      </dl>
+<head>
+  <!-- 一般为UTF-8，当中文网页不含其他语言时追求速度可采用gb2312 -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="Keywords" content="关键词" />
+  <meta name="Description" content="描述信息" />
+  <!-- 10秒后打开百度首页 -->
+  <!-- <meta http-equiv="refresh" content="10;http://www.baidu.com"> -->
+  <title>标题显示在浏览器Tab栏</title>
+  <style>
+    #menu,
+    #menu li {
+      list-style: none;
+      /* 将默认的列表符号去掉 */
+      padding: 0;
+      /* 将默认的内边距去掉 */
+      margin: 0;
+      /* 将默认的外边距去掉 */
+      float: left;
+      /* 往左浮动 */
+      display: block;
+    }
+  </style>
+</head>
 
-      <table border="1">
-        <tbody>
-          <tr>
-            <td>Maybe</td>
-            <td>changping</td>
-          </tr>
-          <tr>
-            <td>Fy</td>
-            <td>wuhu</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <!-- 水平合并单元格 -->
-            <td colspan="2">底部</td>
-          </tr>
-        </tfoot>
-
-        <thead>
-          <tr>
-            <!-- th为加粗的单元格 -->
-            <th colspan="2">表头</th>
-          </tr>
-        </thead>
-      </table>
-      <!-- action中填写的是后台服务一般有asp php -->
-      <form action="XXXX.asp">
-        ID:<br />
-        <input type="text" name="firstname" value="" />
-        <br />
-        Name:<br />
-        <input type="text" name="lastname" value="" />
-        <br /><br />
-        <input type="submit" value="提交" />
-      </form>
-      <form>
-        text：<input type="text" value="disable" disabled="" /><br />
-        password：<input type="password" value="" size="50" /><br />
-        radio：<input type="radio" name="gender" value="male" checked="" />男
-        <input type="radio" name="gender" value="female" />女<br />
-        checkbox：<input type="checkbox" name="checkbox" value="checkbox1" />
-        <input type="checkbox" name="checkbox" value="checkbox2" />
-        <input type="file" />
-        <input type="checkbox" name="checkbox" value="checkbox3" />
-        <textarea name="txtInfo" rows="3" cols="10">多行文本输入框</textarea>
-        >
-      </form>
-      <select size="3">
-        <option>Item1</option>
-        <option>Item2</option>
-        <option>Item3</option>
-        <option>Item4</option>
-      </select>
-      <select>
-        <option>Item1</option>
-        <option>Item2</option>
-        <option>Item3</option>
-        <option>Item4</option>
-      </select>
+<body link="blue" alink="red" vlink="green">
+  <div style="height: 600px;overflow: scroll">
+    <div style="height: 800px">
+      <h1 id="top">顶部 一级标题</h1>
+      <h2>转义字符</h2>
+      <!-- 几个转义字符 -->
+      <p>
+        &nbsp;：空格 &lt;：小于号 &gt;：大于号 &amp;：符号& &quot;：双引号
+        &apos;：单引号 &copy;：版权© &trade;：商标™ &#32423;：文字
+      </p>
+      <a href="http://www.baidu.com" target="_blank">去百度</a>
+      <a href="mailto:smallq1314@outlook.com">邮箱</a>
+      <!-- target指明在哪打开 -->
+      <a href="#top" title="title属性起到一个提示的作用" target="_self">点击我回到顶部</a>
+      <img src="test.png" width="200px" alt="" />
+      <img width="200" src="http://img.dota2.com.cn/dota2/bf/28/bf28dc6e2798fcfd75569db3959c5c131463731922.png"
+        alt="" />
     </div>
-  </body>
+    <ul style="list-style-type: circle">
+      <li>项1</li>
+      <li>项2</li>
+      <li>项3</li>
+    </ul>
+    <ul style="list-style-type:square">
+      <li>项1</li>
+      <li>项2</li>
+      <li>项3</li>
+    </ul>
+    <ul id="menu">
+      <li><a href="#">官网首页</a></li>
+      <li><a href="#">下载</a></li>
+      <li><a href="#">联系我们</a></li>
+    </ul>
+    <ol type="1">
+      <li>项a</li>
+      <li>项b</li>
+      <li>项c</li>
+    </ol>
+    <dl>
+      <dt>关于扇贝</dt>
+      <dd>
+        <a href="#">关注我们</a>
+        <a href="#">加入我们</a>
+        <a href="#">关于我们</a>
+      </dd>
+    </dl>
+
+    <table border="1">
+      <tbody>
+        <tr>
+          <td>Maybe</td>
+          <td>changping</td>
+        </tr>
+        <tr>
+          <td>Fy</td>
+          <td>wuhu</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <!-- 水平合并单元格 -->
+          <td colspan="2">底部</td>
+        </tr>
+      </tfoot>
+
+      <thead>
+        <tr>
+          <!-- th为加粗的单元格 -->
+          <th colspan="2">表头</th>
+        </tr>
+      </thead>
+    </table>
+    <!-- action中填写的是后台服务一般有asp php -->
+    <form action="XXXX.asp">
+      ID:<br />
+      <input type="text" name="firstname" value="" />
+      <br />
+      Name:<br />
+      <input type="text" name="lastname" value="" />
+      <br /><br />
+      <input type="submit" value="提交" />
+    </form>
+    <form>
+      text：<input type="text" value="disable" disabled="" /><br />
+      password：<input type="password" value="" size="50" /><br />
+      radio：<input type="radio" name="gender" value="male" checked="" />男
+      <input type="radio" name="gender" value="female" />女<br />
+      checkbox：<input type="checkbox" name="checkbox" value="checkbox1" />
+      <input type="checkbox" name="checkbox" value="checkbox2" />
+      <input type="file" />
+      <input type="checkbox" name="checkbox" value="checkbox3" />
+      <textarea name="txtInfo" rows="3" cols="10">多行文本输入框</textarea>
+      >
+    </form>
+    <select size="3">
+      <option>Item1</option>
+      <option>Item2</option>
+      <option>Item3</option>
+      <option>Item4</option>
+    </select>
+    <select>
+      <option>Item1</option>
+      <option>Item2</option>
+      <option>Item3</option>
+      <option>Item4</option>
+    </select>
+  </div>
+  <form action="">
+    <fieldset>
+      <legend>新增表单类型</legend>
+      <label for="">
+        email: <input type="email" required>
+      </label>
+      <label for="">
+        color: <input type="color">
+      </label>
+      <label for="">
+        url: <input type="url">
+      </label>
+      <label for="">
+        number: <input type="number" step="3">
+      </label>
+      <label for="">
+        range: <input type="range" value="100">
+      </label>
+      <label for="">
+        search: <input type="search">
+      </label>
+      <label for="">
+        tel: <input type="tel">
+      </label>
+      <label for="">
+        time: <input type="time">
+      </label>
+      <label for="">
+        date: <input type="date">
+      </label>
+      <input type="submit">
+    </fieldset>
+  </form>
+
+  <!-- list与id进行了绑定，在输入的时候会有自动提示 -->
+  <input type="text" list="myData">
+  <datalist id="myData">
+    <option>项目1</option>
+    <option>项目2</option>
+    <option>项目3</option>
+  </datalist>
+  <audio src="xxx.mp3" autoplay controls> </audio>
+  <video src="xxx.mp4" controls autoplay></video>
+</body>
+
 </html>

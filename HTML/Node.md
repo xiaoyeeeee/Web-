@@ -130,3 +130,59 @@ type 属性可定义每一项前的标注样式。
 `<select>`里面的每一项用`<option>`表示。其中 size 属性可设置一次展示多少项，multiple 属性可控制能否多选。
 
 `<textare>`为多行文本输入框。
+# 三、HTML5
+## 1.语义化标签
+``` html
+<header>
+    <ul></ul>
+</header>
+<div >
+       <article></article>
+       <aside></aside>
+</div>
+<footer>
+
+</footer>
+```
+## 2.新增表单类型
+```html
+<form action="">
+    <fieldset>
+      <legend>新增表单类型</legend>
+      <label for="">
+        email: <input type="email" required>
+      </label>
+      <label for="">
+        color: <input type="color">
+      </label>
+      <label for="">
+        url: <input type="url">
+      </label>
+      <label for="">
+        number: <input type="number" step="3">
+      </label>
+      <label for="">
+        range: <input type="range" value="100">
+      </label>
+      <label for="">
+        search: <input type="search">
+      </label>
+      <label for="">
+        tel: <input type="tel">
+      </label>
+      <label for="">
+        time: <input type="time">
+      </label>
+      <label for="">
+        date: <input type="date">
+      </label>
+      <input type="submit">
+    </fieldset>
+  </form>
+  ```
+  ## 3.多媒体
+  音频 ：
+  `<audio src="xxx.mp3" autoplay controls> </audio>`   
+  视频 ：
+  `<video src="xxx.mp4" controls autoplay></video>`
+  
