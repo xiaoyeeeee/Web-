@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .father {
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+        position: relative;
+        top: 100px;
+        left: 100px;
+    }
+
+    .child {
+        height: 100px;
+        width: 100px;
+        background-color: brown;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    #btn {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+    }
+</style>
+
+<body fl>
+    <div style="height: 10000px">
+        <div class="father">
+            <div class="child"></div>
+        </div>
+        <input type="button" name="" id="btn" value="返回顶部">
+    </div>
+</body>
+
+</html>
