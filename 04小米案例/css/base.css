@@ -17,19 +17,37 @@
     font-style: normal;
 }
 
-ul,
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
 h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
 input,
-button {
-    list-style: none;
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
-input,
-button {
-    border: 0;
-    outline: none;
+li {
+    list-style: none;
 }
 
 a {
@@ -112,38 +130,61 @@ a:hover {
 
 .search {
     position: relative;
-    width: 300px;
-    height: 50px;
-    display: block;
-    float: right;
     top: 25px;
+    float: right;
+    display: block;
+    width: 296px;
 }
 
-.search input {
-    height: 48px;
-    width: 230px;
-    border: 1px solid;
-    border-color: #afafaf;
-    float: left;
-    font-size: 14px;
-    padding-left: 10px;
-}
-
-.search button {
+.search-form {
     height: 50px;
-    width: 55px;
-    background-color: #ffffff;
-    border: 1px solid;
-    border-color: #afafaf;
-    float: left;
 }
 
-.search i {
+.search-text {
+    height: 48px;
+    width: 223px;
+    padding: 0 10px;
+    border: #e0e0e0 solid 1px;
+}
+
+.search-submit {
+    height: 50px;
+    position: absolute;
+    width: 52px;
+    top: 0;
+    right: 0;
+    border: #e0e0e0 solid 1px;
+    background-color: #ffffff;
     font-family: "icomoon";
     font-weight: normal;
     font-style: normal;
 }
 
-.search button:hover {
-    background-color: #ff6700;
+.nav {
+    float: left;
+    width: 850px;
+}
+
+.nav ul {
+    position: relative;
+    z-index: 10;
+    float: left;
+    width: 820px;
+    height: 88px;
+    margin: 0;
+    padding: 12px 0 0 30px;
+    list-style-type: none;
+    font-size: 16px;
+    margin-left: 140px;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav a {
+    color: black;
+    display: block;
+    padding: 26px 10px 38px;
+    font-size: 16px !important;
 }
