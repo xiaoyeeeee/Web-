@@ -1,20 +1,22 @@
 /* 公共样式 */
 
 .w {
-    /* 版心的样式 */
-    width: 1220px;
-    margin: 0 auto;
+  /* 版心的样式 */
+  width: 1220px;
+  margin: 0 auto;
 }
-
 
 /* 生命字体 */
 
 @font-face {
-    font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?9orn2');
-    src: url('../fonts/icomoon.eot?9orn2#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?9orn2') format('truetype'), url('../fonts/icomoon.woff?9orn2') format('woff'), url('../fonts/icomoon.svg?9orn2#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?9orn2");
+  src: url("../fonts/icomoon.eot?9orn2#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?9orn2") format("truetype"),
+    url("../fonts/icomoon.woff?9orn2") format("woff"),
+    url("../fonts/icomoon.svg?9orn2#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 blockquote,
@@ -42,149 +44,155 @@ td,
 textarea,
 th,
 ul {
-    margin: 0;
-    padding: 0
+  margin: 0;
+  padding: 0;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: #afafaf;
+  text-decoration: none;
+  color: #afafaf;
 }
 
 a:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .fl {
-    float: left;
+  float: left;
 }
 
 .fr {
-    float: right;
+  float: right;
 }
 
 .shortcut {
-    background-color: #2f2f2f;
-    font-size: 12px;
-    line-height: 40px;
-    height: 40px;
-    /* 行高等于高可以垂直居中 */
-    color: #afafaf;
+  background-color: #2f2f2f;
+  font-size: 12px;
+  line-height: 40px;
+  height: 40px;
+  /* 行高等于高可以垂直居中 */
+  color: #afafaf;
 }
 
 .shortcut i {
-    font-family: "icomoon";
-    font-weight: normal;
-    font-style: normal;
+  font-family: "icomoon";
+  font-weight: normal;
+  font-style: normal;
 }
 
 .shortcut li {
-    float: left;
+  float: left;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .user {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .space {
-    width: 1px;
-    height: 10px;
-    background-color: #afafaf;
-    /* 上、左右、下 */
-    margin: 15px 5px 0px;
+  width: 1px;
+  height: 10px;
+  background-color: #afafaf;
+  /* 上、左右、下 */
+  margin: 15px 5px 0px;
 }
 
 .shopping a {
-    float: right;
-    width: 120px;
-    background-color: #424242;
-    margin: 0 auto;
-    text-align: center;
+  float: right;
+  width: 120px;
+  background-color: #424242;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .shopping :hover {
-    color: #ff6700;
-    background-color: #ffffff;
+  color: #ff6700;
+  background-color: #ffffff;
 }
 
 .middle {
-    height: 100px;
+  height: 100px;
 }
 
 .logo {
-    float: left;
-    position: relative;
-    top: 22px;
+  float: left;
+  position: relative;
+  top: 22px;
 }
 
 .logo a {
-    display: block;
-    background: url(../images/logo.png) no-repeat;
-    width: 55px;
-    height: 55px;
+  display: block;
+  background: url(../images/logo.png) no-repeat;
+  width: 55px;
+  height: 55px;
 }
 
 .search {
-    position: relative;
-    top: 25px;
-    float: right;
-    display: block;
-    width: 296px;
+  position: relative;
+  top: 25px;
+  float: right;
+  display: block;
+  width: 296px;
 }
 
 .search-form {
-    height: 50px;
+  height: 50px;
 }
 
 .search-text {
-    height: 48px;
-    width: 223px;
-    padding: 0 10px;
-    border: #e0e0e0 solid 1px;
+  height: 48px;
+  width: 223px;
+  padding: 0 10px;
+  border: #e0e0e0 solid 1px;
 }
 
 .search-submit {
-    height: 50px;
-    position: absolute;
-    width: 52px;
-    top: 0;
-    right: 0;
-    border: #e0e0e0 solid 1px;
-    background-color: #ffffff;
-    font-family: "icomoon";
-    font-weight: normal;
-    font-style: normal;
+  height: 50px;
+  position: absolute;
+  width: 52px;
+  top: 0;
+  right: 0;
+  border: #e0e0e0 solid 1px;
+  background-color: #ffffff;
+  font-family: "icomoon";
+  font-weight: normal;
+  font-style: normal;
 }
 
 .nav {
-    float: left;
-    width: 850px;
+  float: left;
+  width: 850px;
 }
 
 .nav ul {
-    position: relative;
-    z-index: 10;
-    float: left;
-    width: 820px;
-    height: 88px;
-    margin: 0;
-    padding: 12px 0 0 30px;
-    list-style-type: none;
-    font-size: 16px;
-    margin-left: 140px;
+  position: relative;
+  z-index: 10;
+  float: left;
+  width: 820px;
+  height: 88px;
+  margin: 0;
+  padding: 12px 0 0 30px;
+  list-style-type: none;
+  font-size: 16px;
+  margin-left: 140px;
 }
 
 .nav li {
-    float: left;
+  float: left;
 }
 
 .nav a {
-    color: black;
-    display: block;
-    padding: 26px 10px 38px;
-    font-size: 16px !important;
+  color: black;
+  display: block;
+  padding: 26px 10px 38px;
+  font-size: 16px !important;
+}
+
+.nav .nav-lu a:hover{
+    color: #ff6700;
 }
