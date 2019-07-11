@@ -54,10 +54,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #ffffff;
-}
-
 .fl {
     float: left;
 }
@@ -73,6 +69,10 @@ a:hover {
     height: 40px;
     /* 行高等于高可以垂直居中 */
     color: #afafaf;
+}
+
+.shortcut a:hover {
+    color: #ffffff;
 }
 
 .shortcut a {
@@ -111,7 +111,7 @@ a:hover {
     text-align: center;
 }
 
-.shopping :hover {
+.shopping a:hover {
     color: #ff6700;
     background-color: #ffffff;
 }
