@@ -100,3 +100,23 @@ window.onclick = test.show;
 ```
 
 再做改变，这个时候箭头函数属于 show 这个模块，他的再上一层是 test 这个对象，所以说打印出来应该是 test 这个 Object。
+
+# 4.参数展开
+
+```javascript
+function show(a, b, ...arr) {
+  console.log(a, b, arr);
+}
+
+show(1, 2, 3, 4, 5);
+
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+
+let arr = [...arr1, ...arr2];
+//let arr=[1,2,3, 4,5,6];
+
+console.log(arr);
+```
+
+上面代码展示了参数展开跟数组的展开。需要注意的一点是参数展开时剩余参数一定要写在最后。
