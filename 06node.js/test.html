@@ -10,33 +10,25 @@
 
 <body>
     <script>
-        class Plus {
-            constructor(a, b) {
-                this.a = a;
-                this.b = b;
-            }
-
-            sum() {
-                console.log(this.a + this.b);
+        function fun(n, o) {
+            console.log(o);
+            return {
+                fun: function(m) {
+                    return fun(m, n);
+                }
             }
         }
 
-        class Plus2 extends Plus {
-            constructor(a, b, c) {
-                super(a, b);
-                this.c = c;
-            }
+        var a = fun(0);
+        a.fun(1);
+        a.fun(2);
+        a.fun(3);
 
-            show2() {
-                console.log(this.a + this.b + this.c);
-            }
-        }
+        var b = fun(0).fun(1).fun(2).fun(3);
 
-        let plus = new Plus(1, 2);
-        plus.sum();
-        let plus2 = new Plus2(1, 2, 3);
-        plus2.sum();
-        plus2.show2();
+        var c = fun(0).fun(1);
+        c.fun(2);
+        c.fun(3);
     </script>
 </body>
 
