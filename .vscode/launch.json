@@ -8,10 +8,8 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\06node.js\\test.js",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ]
-        }
+            "program": "${workspaceFolder}\\06node.js\\nodetest\\server.js",
+            "address":"localhost",
+                  }
     ]
 }
