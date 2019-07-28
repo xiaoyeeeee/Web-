@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="提交" id="btn1">
+    <script>
+        window.onload = function() {
+            let btn = document.getElementById("btn1");
+            btn.onclick = function() {
+                let ajax = new XMLHttpRequest();
+                ajax.open("GET", "http://localhost:8080/a", true);
+                ajax.send();
+                ajax.onreadystatechange = function() {
+                    if (ajax.readyState == 4) {
+                        if (ajax.status >= 200 && ajax.status < 300 || ajax.status == 304) {
+                            console.log("成功");
+                            console.log(ajax.statusText);
+                        } else {
+                            console.log("失败");
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
