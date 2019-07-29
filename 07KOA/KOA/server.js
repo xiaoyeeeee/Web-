@@ -1,30 +1,13 @@
-const koa = require("koa");
-const Router = require("koa-router");
+const Koa = require('koa');
 
-let server = new koa();
+let server = new Koa();
 server.listen(8080);
 
-
-let router = new Router();
-let routerParam = new Router();
-let routerFather = new Router();
-let routerChild = new Router();
-
-routerChild.get("/c", async (ctx, next) => {
-    ctx.body = "子级";
+server.use(async(ctx, next) => {
+    ctx.body = '第一步';
+    await next();
 });
 
-routerFather.get("/", async ctx => {
-    ctx.body = "父级";
+server.use(async(ctx, next) => {
+    ctx.body += '第二步';
 });
-
-routerParam.get("/:id/", async ctx => {
-    let str = JSON.stringify(ctx.params);
-    ctx.body = `${str}`;
-});
-
-routerFather.use(routerChild.routes());
-router.use("/f", routerFather.routes());
-router.use("/p", routerParam.routes());
-
-server.use(router.routes());
