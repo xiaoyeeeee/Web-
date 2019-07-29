@@ -1,7 +1,5 @@
-# .NET 转前端基础知识笔记
+/// <reference path="typings/globals/node/index.d.ts" />
 
-## 1.http
-```javascript
 const http = require("http");
 
 http.createServer((req, res) => {
@@ -10,5 +8,3 @@ http.createServer((req, res) => {
     res.end();
 
 }).listen(8080);
-```
-
