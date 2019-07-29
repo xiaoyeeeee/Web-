@@ -15,6 +15,7 @@
             let btn = document.getElementById("btn1");
             btn.onclick = function() {
                 let ajax = new XMLHttpRequest();
+                //// 第二个参代表是否异步，false已经被废弃了
                 ajax.open("GET", "http://localhost:8080/a", true);
                 ajax.send();
                 ajax.onreadystatechange = function() {
