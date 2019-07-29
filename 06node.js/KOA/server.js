@@ -10,7 +10,7 @@ let routerParam = new Router();
 let routerFather = new Router();
 let routerChild = new Router();
 
-routerChild.get("/c", async(ctx, next) => {
+routerChild.get("/c", async (ctx, next) => {
     ctx.body = "子级";
 });
 
