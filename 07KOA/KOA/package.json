@@ -12,5 +12,8 @@
   "devDependencies": {
     "koa": "^2.7.0",
     "koa-router": "^7.4.0"
+  },
+  "dependencies": {
+    "koa-session": "^5.12.2"
   }
 }
