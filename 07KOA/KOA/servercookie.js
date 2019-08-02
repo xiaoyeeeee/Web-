@@ -1,5 +1,4 @@
 const koa = require("koa");
-const router = require("koa-router");
 
 let server = new koa();
 server.listen(8080);
