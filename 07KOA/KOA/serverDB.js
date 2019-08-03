@@ -1,7 +1,3 @@
-# .NET 转前端基础知识笔记
-
-## 数据库操作
-```javascript
 const koa = require("koa");
 const mysql = require("mysql");
 const co = require("co-mysql");
@@ -21,9 +17,6 @@ server.listen(8080);
 
 server.context.db = db;
 server.use(async ctx => {
-    //// 注意数据库操作是异步的
     let data = await ctx.db.query("SELECT * FROM NODETEST");
     console.log(data);
 })
-```
-把创建db对象的过程最好扔到一个自定义的模块中然后在主模块引用冰放到koa的原型对象中，在这里为了看起来方便我把他们写一个文件里了。

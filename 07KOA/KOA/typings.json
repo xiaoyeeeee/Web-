@@ -1,4 +1,6 @@
 {
   "name": "koa",
-  "dependencies": {}
+  "dependencies": {
+    "koa": "registry:dt/koa#2.0.0+20170311193110"
+  }
 }
